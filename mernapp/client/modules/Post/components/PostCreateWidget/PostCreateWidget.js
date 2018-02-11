@@ -9,8 +9,9 @@ export class PostCreateWidget extends Component {
     const nameRef = this.refs.name;
     const titleRef = this.refs.title;
     const contentRef = this.refs.content;
+    const votes = 0;
     if (nameRef.value && titleRef.value && contentRef.value) {
-      this.props.addPost(nameRef.value, titleRef.value, contentRef.value);
+      this.props.addPost(nameRef.value, titleRef.value, contentRef.value, votes);
       nameRef.value = titleRef.value = contentRef.value = '';
     }
   };
