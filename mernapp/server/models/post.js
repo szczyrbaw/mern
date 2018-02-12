@@ -7,7 +7,7 @@ const postSchema = new Schema({
   content: { type: 'String', required: true },
   slug: { type: 'String', required: true },
   cuid: { type: 'String', required: true },
-  votes: {type: 'Number', required: true},
+  votes: {type: 'Number', default: 0},
   dateAdded: { type: 'Date', default: Date.now, required: true },
 });
 
